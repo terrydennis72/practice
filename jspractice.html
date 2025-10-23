@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: background-color 0.3s ease;
+        }
+
+        .active {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript practice</h2>
+    <div id="myBox" class="box">Click me!</div>
+    <button onclick="toggleBoxClass()">Toggle Class</button>
+
+    <script>
+        function toggleBoxClass() {
+            const myBox = document.getElementById('myBox');
+            myBox.classList.toggle('active'); // Toggles the 'active' class
+        }
+    </script>
+</body>
+</html>
